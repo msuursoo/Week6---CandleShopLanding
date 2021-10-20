@@ -12,9 +12,9 @@ body {
 }
 
 .intro-image {
-
+    background-attachment: fixed;
     height: 95vh;
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.712), rgba(0, 0, 0, 0.075)) ,url('../img/candles.jpeg'); 
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.233), rgba(0, 0, 0, 0.075)) ,url('../img/candles.jpeg'); 
     background-position: center;
     background-size: cover;
 }
@@ -28,6 +28,7 @@ body {
     width: 100%;
     overflow: hidden;
 }
+
 
 .btn {
     color: rgb(70, 2, 31);
@@ -47,17 +48,87 @@ body {
 
 .intro-text {
     background-color: rgb(252, 152, 39);
+    color: rgb(90, 52, 3);
     height: 32vh;
-    margin-top: -1.6rem;
-    margin-bottom: -1.5rem;
+    margin-top: -1.7rem;
+    margin-bottom: -1.7rem;
     text-align: center;
     padding-top: 3rem;
     clip-path: polygon(51% 11%, 100% 0, 100% 43%, 100% 100%, 52% 89%, 0 100%, 0 100%, 0 0, 0 0);
 }
 
+.intro-text__textbox h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: beige;
+}
+
 .packaging-image {
+    background-attachment: fixed;
     height: 95vh;
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.26), rgba(0, 0, 0, 0.075)) ,url('../img/pack.jpeg');
     background-position: center;
     background-size: cover;
+}
+
+.packaging-image__text {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
+
+.packaging-text {
+    background-color: rgb(213, 253, 121);
+    color: rgb(90, 52, 3);
+    height: 32vh;
+    text-align: center;
+    padding: 0 15rem;
+    padding-top: 3rem;
+    
+}
+
+.packaging-text h3 {
+    color: green;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    height: 51vh;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.233), rgba(0, 0, 0, 0.075)) ,url('../img/tutorial.jpeg'); 
+    background-position: top;
+    background-size: cover;
+}
+
+.tutorials-image__text {
+    position: absolute;
+    top: 270%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    text-align: center;
+}
+
+.footer {
+    height: 200px;
+    background-color: #e1fc82;
+    color: #8d4c01;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    color: #773004;
+    text-decoration: none;
+}
+
+.footer ul li:hover {
+    transform: scale(1.1);
 }
